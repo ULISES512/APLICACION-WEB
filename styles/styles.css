@@ -1,0 +1,507 @@
+.promo {
+  position: relative;
+	width: 100%;
+	margin:0px auto 0;
+	overflow: hidden;
+}
+
+.promo ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+.promo ul:hover{
+  animation-play-state: paused;
+}
+
+.promo li {
+	width: 100%;
+	list-style: none;
+}
+
+.promo img {
+	width: 100%;
+  animation: visibility 1.9s;
+  cursor: pointer;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+.promo video{
+  display: none; 
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 100px;
+}
+.product {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+  animation: visibility 1s;
+
+}
+.caracteristicas {
+  width: 100%;
+  padding: 0px 200px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Oswald", sans-serif;
+  animation: visibility 1s;
+
+  animation: visibility 1s;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.info a {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-family: "Reddit Sans Condensed", sans-serif;
+  animation: visibility 1s;
+  text-decoration: none;
+  transition: all 0.3s;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+.info a:hover {
+  border-bottom: 1px solid white;
+}
+.info a::after {
+  content: ">";
+  color: rgb(0, 255, 0);
+}
+.info .product::after {
+  content: "TAMAÑO PEQUEÑO. GRAN RENDIMIENTO.";
+  color: rgb(13, 255, 0);
+}
+@keyframes visibility {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+
+  }
+  60% {
+    opacity: 0;
+   
+  }
+  90% {
+    opacity: 1;
+    color: white;
+  }
+}
+
+
+.l1{
+  animation: visibility 0.8s;
+}
+.l2{
+  animation: visibility 0.9s;
+}
+.l3{
+  animation: visibility 1s;
+}
+.l4{
+  animation: visibility 1.1s;
+}
+.l5{
+  animation: visibility 1.2s;
+}
+.l6{
+  animation: visibility 1.3s;
+}
+.l7{
+  animation: visibility 1.4s;
+}
+.l8{
+  animation: visibility 1.5s;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  animation: visibility 0.7s;
+  border-bottom: 0.5px solid rgb(0, 255, 0);
+}
+.header .logo a {
+  font-size: 20px;
+  color: rgb(111, 111, 111);
+  text-decoration: none;
+  font-family: "Reddit Sans Condensed", sans-serif;
+  cursor: pointer;
+  animation: visibility 0.7s;
+}
+
+.header .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.header .nav-links li a {
+  font-size: 20px;
+  color: rgb(111, 111, 111);
+  text-decoration: none;
+  font-family: "Reddit Sans Condensed", sans-serif;
+  transition: all 0.3s;
+  padding: 0px 20px;
+}
+
+.header .nav-links li a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+.logo::before {
+  content: url('../sources/icons/razer-ths-logo.svg');
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  margin-right: 8px; 
+  vertical-align: middle; 
+}
+.menu-icon {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 24px;
+  color: rgb(0, 255, 26);
+}
+
+#menu-toggle {
+  display: none;
+}
+/*ESTA PARTE ES PARA LA ANIMACION DE LAS FOTOS O IMAGENES PARA QUE SE VEAN TRANSICIONADAS*/
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.section1 {
+  position: relative;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-top:100px;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: visibility 1s;
+}
+.laptop1,.laptop2,.laptop3,.laptop4{
+  cursor: pointer; 
+
+}
+.laptop1{
+  background: linear-gradient(to right, #1e3cff, #7070ff);
+  border: 1px solid #121212; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 500px;
+  padding: 16px; 
+  margin: 0 auto;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  
+  animation-timeline: --image;
+  animation-name: show;
+  
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+  transition: all 0.3s;
+}
+.laptop1 .lap1{
+  width: 400px;
+}
+.laptop1 .p1,.lap1info{
+  content: 'HUAWEI MateBook X Pro';
+    font-family: "Oswald", sans-serif;
+    font-size:15px;
+    color: white;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    
+    animation-timeline: --image;
+    animation-name: show;
+    
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    transition: all 0.3s;
+}
+
+.laptop2{
+  background: linear-gradient(to right, #d3fff3,#ffffff );
+  border: 1px solid #12121200; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  padding: 16px; 
+  margin: 0 auto; 
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  
+  animation-timeline: --image;
+  animation-name: show;
+  
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+  transition: all 0.3s;
+}
+.laptop2 .lap2{
+  width: 400px;
+  padding: 30px 0px;
+}
+.laptop2 .p2,.lap2info{
+  content: 'HUAWEI MateBook X Pro';
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    
+    animation-timeline: --image;
+    animation-name: show;
+    
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    transition: all 0.3s;
+}
+
+.laptop3{
+  background: linear-gradient(to right, #3c3c3c, #b64b4b );
+  border: 1px solid #12121200; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  padding: 16px; 
+  margin: 20px auto; 
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  
+  animation-timeline: --image;
+  animation-name: show;
+  
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+  transition: all 0.3s;
+}
+.laptop3 .lap3{
+  width: 300px;
+  padding: 30px 0px;
+}
+.laptop3 .p3,.lap3info{
+  content: 'HUAWEI MateBook X Pro';
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    
+    animation-timeline: --image;
+    animation-name: show;
+    
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    transition: all 0.3s;
+}
+  
+.laptop4{
+  background: linear-gradient(to right, #cfcfcf, #ffb84f );
+  border: 1px solid #12121200; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  padding: 16px; 
+  margin: 20px auto; 
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  
+  animation-timeline: --image;
+  animation-name: show;
+  
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+  transition: all 0.3s;
+}
+.laptop4 .lap4{
+  width: 400px;
+  padding: 0px 0px;
+}
+.laptop4 .p4,.lap4info{
+  content: 'ASUS TUF Gaming F15';
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    
+    animation-timeline: --image;
+    animation-name: show;
+    
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    transition: all 0.3s;
+}
+
+.section2{
+  position: relative;
+  width: 100%;
+  background-color: #111111;
+  margin-top:10px;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  animation: visibility 1s;
+}
+.section2 .links1-section2 li{
+ list-style: none;
+ padding: 10px 30px;
+
+}
+.section2 .links1-section2 a{
+  color: rgb(129, 129, 129);
+  font-size: 13px;
+  font-family: "Jura", sans-serif;
+    text-decoration: rgba(255, 255, 255, 0);
+}
+.section2 .links1-section2 a:hover{
+  border-bottom: 1px solid white;
+  color: white;
+}
+.section2 .links1-section2 #title1-section2{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: "Jura", sans-serif;
+    text-decoration: none;
+}
+
+/*DESDE AQUI COMIENZA EL RESPONSIVE*/
+@media (max-width: 768px) {
+
+  .promo img {
+    display: none; 
+  }
+  
+  .promo video {
+    display: block; 
+  }
+  
+  .caracteristicas {
+    display: none;
+  }
+  body {
+    padding-top: 80px;
+  }
+  .info a {
+    font-size: 20px;
+  }
+  .info p {
+    font-size: 25px;
+  }
+  .header .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.893);
+    text-align: center;
+  }
+
+  .header .nav-links li {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ nav .nav-links {
+    display: flex;
+  }
+  .laptop1, .laptop2 ,.laptop3,.laptop4{
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px; 
+  }
+
+  .laptop1 .lap1, .laptop2 .lap2 ,.laptop3 .lap3 ,.laptop4 .lap3{
+    width: 100%; 
+  }
+.laptop3{
+  margin: 0px auto; 
+}
+.laptop4 .lap4{
+  width: 200px;
+}
+  .section1 {
+    margin-top: 200px;
+    justify-content: center; 
+  }
+  .section2{
+    padding: 30px 20px;
+    justify-content: center;
+  }
+}
