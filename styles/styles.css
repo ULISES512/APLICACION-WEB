@@ -11,9 +11,7 @@
 	width: 400%;
 	animation: slide 20s infinite alternate ease-in-out;
 }
-.promo ul:hover{
-  animation-play-state: paused;
-}
+
 
 .promo li {
 	width: 100%;
@@ -57,7 +55,7 @@ body {
   margin: 0;
   background-color: rgb(0, 0, 0);
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .product {
   font-size: 50px;
@@ -169,7 +167,6 @@ body {
   z-index: 1;
   box-sizing: border-box;
   animation: visibility 0.7s;
-  border-bottom: 0.5px solid rgb(0, 255, 0);
 }
 .header .logo a {
   font-size: 20px;
@@ -205,12 +202,10 @@ body {
   color: white;
 }
 .logo::before {
-  content: url('../sources/icons/razer-ths-logo.svg');
-  display: inline-block;
+  content: url('');
   width: 20px; 
   height: 20px; 
-  margin-right: 8px; 
-  vertical-align: middle; 
+  
 }
 .menu-icon {
   display: none;
